@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">ShopMate</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_inventory">Inventory</string>
+    <string name="nav_sales">Sales</string>
+    <string name="nav_reports">Reports</string>
+
+    <!-- Auth -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="setup_shop">Set Up Your Shop</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="skip_login">Continue without login</string>
+
+    <!-- Dashboard -->
+    <string name="total_products">Total Products</string>
+    <string name="low_stock">Low Stock</string>
+    <string name="today_revenue">Today\'s Revenue</string>
+    <string name="today_sales">Today\'s Sales</string>
+    <string name="add_product">Add Product</string>
+    <string name="record_sale">Record Sale</string>
+    <string name="view_inventory">View Inventory</string>
+    <string name="view_reports">View Reports</string>
+
+    <!-- Inventory -->
+    <string name="search_products">Search products…</string>
+    <string name="product_name">Product Name</string>
+    <string name="category">Category</string>
+    <string name="quantity">Quantity</string>
+    <string name="cost_price">Cost Price (₹)</string>
+    <string name="selling_price">Selling Price (₹)</string>
+    <string name="min_threshold">Min Stock Threshold</string>
+    <string name="unit">Unit (pcs, kg, etc.)</string>
+    <string name="barcode">Barcode (optional)</string>
+    <string name="description">Description (optional)</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="restock">Restock</string>
+    <string name="out_of_stock">Out of Stock</string>
+    <string name="low_stock_label">Low Stock</string>
+    <string name="in_stock">In Stock</string>
+
+    <!-- Sales -->
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="checkout">Checkout</string>
+    <string name="cart">Cart</string>
+    <string name="total">Total</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="cash">Cash</string>
+    <string name="upi">UPI</string>
+    <string name="card">Card</string>
+    <string name="discount">Discount (₹)</string>
+    <string name="confirm_sale">Confirm Sale</string>
+    <string name="sale_success">Sale recorded successfully!</string>
+
+    <!-- Reports -->
+    <string name="today">Today</string>
+    <string name="this_week">This Week</string>
+    <string name="this_month">This Month</string>
+    <string name="total_revenue">Total Revenue</string>
+    <string name="total_profit">Total Profit</string>
+    <string name="transactions">Transactions</string>
+    <string name="export_csv">Export CSV</string>
+    <string name="backup">Backup</string>
+    <string name="restore">Restore</string>
+    <string name="top_products">Top Products</string>
+    <string name="sales_by_category">Sales by Category</string>
+
+    <!-- Default categories -->
+    <string-array name="default_categories">
+        <item>Grains &amp; Cereals</item>
+        <item>Dairy</item>
+        <item>Beverages</item>
+        <item>Snacks</item>
+        <item>Condiments</item>
+        <item>Oils &amp; Fats</item>
+        <item>Instant Food</item>
+        <item>Household</item>
+        <item>Personal Care</item>
+        <item>Stationery</item>
+        <item>Medicines</item>
+        <item>Electronics</item>
+        <item>Clothing</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="payment_methods">
+        <item>Cash</item>
+        <item>UPI</item>
+        <item>Card</item>
+        <item>Credit</item>
+    </string-array>
+
+    <string-array name="units">
+        <item>pcs</item>
+        <item>kg</item>
+        <item>g</item>
+        <item>l</item>
+        <item>ml</item>
+        <item>bottle</item>
+        <item>pack</item>
+        <item>bag</item>
+        <item>box</item>
+        <item>dozen</item>
+    </string-array>
+</resources>

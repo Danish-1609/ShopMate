@@ -1,0 +1,6 @@
+-keep class com.shopmate.data.entities.** { *; }
+-keep class com.shopmate.models.** { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
+-keep class com.google.gson.** { *; }
+-dontwarn com.google.gson.**

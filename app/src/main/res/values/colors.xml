@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors -->
+    <color name="primary">#1565C0</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="primary_light">#42A5F5</color>
+    <color name="secondary">#00897B</color>
+    <color name="secondary_dark">#00695C</color>
+    <color name="accent">#FF6F00</color>
+
+    <!-- Semantic Colors -->
+    <color name="success">#2E7D32</color>
+    <color name="success_light">#E8F5E9</color>
+    <color name="warning">#E65100</color>
+    <color name="warning_light">#FFF3E0</color>
+    <color name="error">#C62828</color>
+    <color name="error_light">#FFEBEE</color>
+    <color name="info">#1565C0</color>
+    <color name="info_light">#E3F2FD</color>
+
+    <!-- Stock Status -->
+    <color name="stock_good">#2E7D32</color>
+    <color name="stock_low">#E65100</color>
+    <color name="stock_out">#C62828</color>
+    <color name="stock_good_bg">#E8F5E9</color>
+    <color name="stock_low_bg">#FFF3E0</color>
+    <color name="stock_out_bg">#FFEBEE</color>
+
+    <!-- UI Colors -->
+    <color name="background">#F5F7FA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#BDBDBD</color>
+    <color name="icon_tint">#616161</color>
+
+    <!-- Dark Mode -->
+    <color name="dark_background">#121212</color>
+    <color name="dark_surface">#1E1E1E</color>
+    <color name="dark_card">#2C2C2C</color>
+    <color name="dark_text_primary">#EFEFEF</color>
+    <color name="dark_text_secondary">#AAAAAA</color>
+
+    <!-- Chart Colors -->
+    <color name="chart_1">#1565C0</color>
+    <color name="chart_2">#00897B</color>
+    <color name="chart_3">#FF6F00</color>
+    <color name="chart_4">#6A1B9A</color>
+    <color name="chart_5">#AD1457</color>
+    <color name="chart_6">#558B2F</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+    <color name="overlay_light">#80FFFFFF</color>
+    <color name="overlay_dark">#80000000</color>
+</resources>
