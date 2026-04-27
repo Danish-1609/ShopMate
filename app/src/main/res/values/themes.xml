@@ -54,7 +54,7 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="Badge.LowStock">
+    <style name="Badge.LowStock" parent="android:Widget.TextView">
         <item name="android:background">@drawable/bg_badge_warning</item>
         <item name="android:textColor">@color/warning</item>
         <item name="android:paddingStart">8dp</item>
@@ -64,7 +64,7 @@
         <item name="android:textSize">11sp</item>
     </style>
 
-    <style name="Badge.OutOfStock">
+    <style name="Badge.OutOfStock" parent="android:Widget.TextView">
         <item name="android:background">@drawable/bg_badge_error</item>
         <item name="android:textColor">@color/error</item>
         <item name="android:paddingStart">8dp</item>
@@ -74,7 +74,7 @@
         <item name="android:textSize">11sp</item>
     </style>
 
-    <style name="Badge.InStock">
+    <style name="Badge.InStock" parent="android:Widget.TextView">
         <item name="android:background">@drawable/bg_badge_success</item>
         <item name="android:textColor">@color/success</item>
         <item name="android:paddingStart">8dp</item>
