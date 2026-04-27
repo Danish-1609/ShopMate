@@ -1,3 +1,4 @@
+cat > ~/ShopMate/.github/workflows/build.yml << 'EOF'
 name: Build ShopMate APK
 on:
   push:
@@ -14,11 +15,16 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: gradle
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+      - name: Make gradlew executable
+        run: chmod +x gradlew
       - name: Build APK
-        run: chmod +x gradlew && ./gradlew assembleDebug --no-daemon
+        run: ./gradlew assembleDebug --no-daemon --stacktrace
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: ShopMate-debug-apk
           path: app/build/outputs/apk/debug/app-debug.apk
           retention-days: 30
+EOF
