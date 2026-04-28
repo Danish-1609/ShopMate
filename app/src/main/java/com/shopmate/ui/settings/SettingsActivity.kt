@@ -89,7 +89,7 @@ class SettingsActivity : AppCompatActivity() {
                 .setTitle("Clear Acknowledged Alerts")
                 .setMessage("Remove all dismissed restock alerts from history?")
                 .setPositiveButton("Clear") { _, _ ->
-                    kotlinx.coroutines.GlobalScope.launch(kotlinx.coroutines.Dispatchers.IO) {
+                    lifecycleScope.launch(kotlinx.coroutines.Dispatchers.IO) {
                         app.alertRepository.clearAcknowledgedAlerts()
                         runOnUiThread { toast("Alerts cleared") }
                     }
