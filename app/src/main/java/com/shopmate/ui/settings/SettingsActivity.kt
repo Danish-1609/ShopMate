@@ -5,6 +5,9 @@ import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import com.shopmate.ShopMateApp
 import com.shopmate.databinding.ActivitySettingsBinding
 import com.shopmate.ui.auth.AuthActivity
@@ -19,9 +22,7 @@ class SettingsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySettingsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         binding.toolbar.setNavigationOnClickListener { finish() }
-
         loadSettings()
         setupListeners()
     }
@@ -89,7 +90,7 @@ class SettingsActivity : AppCompatActivity() {
                 .setTitle("Clear Acknowledged Alerts")
                 .setMessage("Remove all dismissed restock alerts from history?")
                 .setPositiveButton("Clear") { _, _ ->
-                    kotlinx.coroutines.GlobalScope.launch(kotlinx.coroutines.Dispatchers.IO) {
+                    GlobalScope.launch(Dispatchers.IO) {
                         app.alertRepository.clearAcknowledgedAlerts()
                         runOnUiThread { toast("Alerts cleared") }
                     }
